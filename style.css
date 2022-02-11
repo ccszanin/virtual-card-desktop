@@ -7,25 +7,43 @@ body {
   --black: hsl(240, 6%, 13%);
   --grey: hsl(240, 9%, 89%);
 
-  background: #121214;
   height: 100%;
 
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
+
+  height: 1118px;
+
+  background: #121214
+    radial-gradient(closest-side, hsla(345, 100%, 62%, 1), black);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+
+  z-index: 1;
 }
 
+header {
+  width: 62px;
+  height: 0px;
+  left: 688px;
+  top: 0px;
+  margin: -2px auto;
+}
+
+#quebra {
+  width: 80px;
+  height: 15px;
+  margin: 115px auto;
+  position: relative;
+}
 .card {
+  background: url('./images/mas.svg');
   width: 358px;
   height: 540px;
   text-align: center;
   color: var(--grey);
-  background: #202024;
+  background-color: #202024;
   border-radius: 0.25rem;
-  margin: 140px auto;
-}
-
-.fundo span {
-  left: 460px;
+  margin: 115px auto;
 }
 
 .avatar {
@@ -36,12 +54,12 @@ body {
 
 .avatar span {
   position: absolute;
-  top: 20px;
+  top: 80px;
   left: 100px;
   z-index: 1;
 }
 .avatar > img {
-  margin-top: 30px;
+  margin-top: 73px;
   width: 10rem;
   height: 11.5rem;
   object-fit: cover;
@@ -50,7 +68,7 @@ body {
 
 h1 {
   font-size: 1.5rem;
-  margin-top: 1.5rem;
+  margin-top: -4rem;
 }
 a {
   color: var(--grey);
